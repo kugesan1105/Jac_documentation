@@ -13,8 +13,8 @@
             padding: 0;
             display: flex;
             height: 100vh;
-            background-color: #1e1e1e; /* Set the background color to a dark shade */
-            color: #fff; /* Set text color to white */
+            background-color: #1e1e1e; 
+            color: #fff; 
         }
 
         #sidebar {
@@ -68,7 +68,7 @@
         #toggleBtn {
             position: fixed;
             top: 10px;
-            left: 10px;
+            left: 20px;
             cursor: pointer;
             background-color: #333;
             color: #fff;
@@ -82,7 +82,8 @@
 <body>
 
     <button id="toggleBtn" onclick="toggleSidebar()">
-        <img src="image.png" alt="Toggle Sidebar" style="width: 30px; height: 30px;">
+        <img src="image.png" alt="Toggle Sidebar" style="width: 20px; height: 30px;">
+        Docs
     </button>
 
     <div id="sidebar">
@@ -120,14 +121,14 @@
         }
 
         function displayContent(content) {
-    if (typeof marked === 'function') {
-        var contentContainer = document.getElementById('content-container');
-        contentContainer.innerHTML = marked(content);
-        console.log(content); // Add this line to log content to the console
-    } else {
-        console.error('marked is not defined. Make sure the marked library is included.');
-    }
-}
+                if (typeof marked === 'function') {
+                    var contentContainer = document.getElementById('content-container');
+                    contentContainer.innerHTML = marked(content);
+                    console.log(content); 
+                } else {
+                    console.error('marked is not defined. Make sure the marked library is included.');
+                }
+            }
 
 
         function toggleSidebar() {
