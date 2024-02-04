@@ -5,12 +5,23 @@ body {
     display: flex;
     height: 100vh;
     background-color: #030302;
-    color: #ffffff;
+    color: #fcfcfc;
 }
 main hr {
-    border: 1.9px solid #bb4e10; 
+    border: 1.9px solid #383533; 
     margin-top: 10px;
 }
+#content-container {
+    background-color: #fff; /* Set a background color for the content container */
+    padding: 20px; /*Add padding inside the content container*/
+    border:  1px solid #302b2b; /*Add a border around the content container*/
+    border-radius: 8px; /* Optional: Add rounded corners for a more stylish look */
+    box-shadow: 0 0 10px rgba(71, 71, 71, 0.1); /* Optional: Add a subtle box shadow for depth */
+    margin-top: 20px; /* Add margin at the top for separation from the heading and horizontal rule */
+    
+    color: #000; /* Set the text color to black */
+}
+
 
 #sidebar {
     background-color: #333;
