@@ -4,8 +4,12 @@ body {
     padding: 0;
     display: flex;
     height: 100vh;
-    background-color: #1e1e1e;
-    color: #fff;
+    background-color: #030302;
+    color: #ffffff;
+}
+main hr {
+    border: 1.9px solid #bb4e10; 
+    margin-top: 10px;
 }
 
 #sidebar {
